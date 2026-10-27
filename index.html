@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#11142b">
+    <meta name="description" content="Explore how everyday digital habits and lifestyle connect to a model-predicted wellness score.">
+    <title>MindAura — Your habits, your balance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="ambient ambient-three" aria-hidden="true"></div>
+    <div class="particle-field" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="wave-lines" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="navigation page-shell" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="MindAura home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M20 3.5c2.8 7.9 8.6 13.7 16.5 16.5C28.6 22.8 22.8 28.6 20 36.5 17.2 28.6 11.4 22.8 3.5 20 11.4 17.2 17.2 11.4 20 3.5Z" fill="currentColor"/>
+              <circle cx="20" cy="20" r="3.1" fill="#17172f"/>
+            </svg>
+          </span>
+          <span>Mind<span class="brand-light">Aura</span></span>
+        </a>
+        <div class="nav-links">
+          <a href="#how-it-works">How it works</a>
+          <a href="#predictor">Explore your score</a>
+          <a class="nav-status" href="#predictor"><span class="status-dot"></span> Wellness, in focus</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero page-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR PERSONAL WELLNESS LENS</p>
+          <p class="hero-tagline">Understand Your Habits. Discover Your Balance.</p>
+          <p class="greeting">Hello, Mind Explorer <span aria-hidden="true">✨</span></p>
+          <h1 id="hero-title">Your Mind.<br>Your Habits.<br><span>Your Balance.</span></h1>
+          <p class="hero-description">Discover how your everyday digital habits, study routine, sleep, and lifestyle relate to your predicted mental wellness score.</p>
+          <a class="button button-primary hero-cta" href="#predictor">
+            <span>✨ Explore My Wellness Score</span>
+            <span class="button-arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="hero-note"><span class="tiny-shield" aria-hidden="true">✦</span> A moment of reflection, built around your routine.</p>
+        </div>
+
+        <div class="hero-art reveal" aria-label="Abstract illustration of a calm, glowing mind">
+          <div class="art-orbit orbit-outer"></div>
+          <div class="art-orbit orbit-inner"></div>
+          <div class="art-spark spark-one">✦</div>
+          <div class="art-spark spark-two">✧</div>
+          <div class="art-spark spark-three">·</div>
+          <div class="art-core">
+            <div class="core-glow"></div>
+            <svg class="mind-illustration" viewBox="0 0 240 240" fill="none" role="img" aria-labelledby="mind-art-title">
+              <title id="mind-art-title">A stylized, balanced mind surrounded by a soft aura</title>
+              <path d="M120 32c-25 0-44 19-44 43 0 5 1 10 3 14-14 7-23 21-23 37 0 23 18 42 41 43 8 20 27 34 49 34 29 0 52-23 52-52 0-11-3-21-9-29 7-8 11-18 11-29 0-24-19-43-43-43-10-11-23-18-37-18Z" fill="url(#brain-fill)" fill-opacity=".92" stroke="url(#brain-line)" stroke-width="2"/>
+              <path d="M117 47v143M92 67c-7 12-6 26 4 35m-27 21c16-5 30 3 34 19m-24 34c16-4 26-15 28-29m42-80c10 9 12 22 5 34m28 12c-15-2-26 8-29 22m20 36c-13-5-25-15-27-29" stroke="#E8DEFF" stroke-opacity=".82" stroke-width="3" stroke-linecap="round"/>
+              <path d="M120 78c-9 10-10 21-2 31m1 19c-10 4-16 13-16 25m18-47c10 4 16 12 17 22" stroke="#82F2D1" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="119" cy="119" r="5" fill="#F9D8FF"/>
+            </svg>
+            <div class="art-caption"><span class="caption-pulse"></span> Your balance, in focus</div>
+          </div>
+          <div class="orbit-label label-top">MIND</div>
+          <div class="orbit-label label-bottom">MOMENT</div>
+        </div>
+      </section>
+
+      <section class="section-block how-section page-shell" id="how-it-works" aria-labelledby="how-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE MORE AWARENESS</p>
+          <h2 id="how-title">A clearer picture,<br><span>one step at a time.</span></h2>
+          <p>MindAura brings your everyday patterns into view with a simple, thoughtful experience.</p>
+        </div>
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <span class="step-number">01</span>
+            <div class="process-icon icon-lifestyle" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M12 9.5h24a3 3 0 0 1 3 3v23a3 3 0 0 1-3 3H12a3 3 0 0 1-3-3v-23a3 3 0 0 1 3-3Z" stroke="currentColor" stroke-width="1.7"/><path d="M16 17h16M16 23h10m-10 6h13m-13 6h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="34" cy="29" r="5" fill="#11142B" stroke="currentColor" stroke-width="1.7"/></svg>
+            </div>
+            <h3>Lifestyle inputs</h3>
+            <p>Share a few details about your routine, screen habits, rest, and daily life.</p>
+            <span class="card-footnote">YOUR ROUTINE, YOUR WAY <span aria-hidden="true">↗</span></span>
+          </article>
+          <article class="process-card reveal">
+            <span class="step-number">02</span>
+            <div class="process-icon icon-analysis" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M24 7v7m0 20v7M7 24h7m20 0h7M12 12l5 5m14 14 5 5m0-24-5 5m-14 14-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="24" cy="24" r="9" stroke="currentColor" stroke-width="1.7"/><circle cx="24" cy="24" r="3" fill="currentColor"/></svg>
+            </div>
+            <h3>AI analysis</h3>
+            <p>Your responses are sent to the project model, which looks for patterns in the inputs.</p>
+            <span class="card-footnote">PATTERNS, NOT DEFINITIONS <span aria-hidden="true">↗</span></span>
+          </article>
+          <article class="process-card reveal">
+            <span class="step-number">03</span>
+            <div class="process-icon icon-score" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M9 35.5a17 17 0 1 1 30 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="m24 26 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="26" r="3" fill="currentColor"/><path d="M14 35h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Predicted score</h3>
+            <p>See the model's numeric estimate with context, not a medical label or diagnosis.</p>
+            <span class="card-footnote">A MOMENT TO REFLECT <span aria-hidden="true">↗</span></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="predict-section page-shell" id="predictor" aria-labelledby="predict-title">
+        <div class="predict-intro reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR WELLNESS CHECK-IN</p>
+          <h2 id="predict-title">Make space for<br><span>your patterns.</span></h2>
+          <p>Answer what you can. This is a project model's prediction from your inputs, not a measure of your worth or a medical assessment.</p>
+          <div class="privacy-note"><span aria-hidden="true">✧</span><p><strong>A gentle note</strong><br>Your answers are used to request a prediction from the local project API.</p></div>
+          <div class="progress-preview">
+            <div class="progress-preview-head"><span>Your check-in</span><span id="progress-count">0 / 12</span></div>
+            <div class="progress-track" role="progressbar" aria-label="Prediction form completion" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0"><span id="progress-bar"></span></div>
+            <p>Every answer helps complete your snapshot.</p>
+          </div>
+        </div>
+
+        <div class="form-panel glass-panel reveal">
+          <div class="form-heading">
+            <div>
+              <span class="form-kicker">A FEW DETAILS ABOUT YOU</span>
+              <h3>Let's begin with you</h3>
+              <p>All fields are required for your prediction.</p>
+            </div>
+            <span class="form-step">01 <span>/ 01</span></span>
+          </div>
+
+          <form id="prediction-form" novalidate>
+            <div class="form-section-label"><span class="section-icon" aria-hidden="true">◈</span> ABOUT YOU <span class="section-rule"></span></div>
+            <div class="field-grid">
+              <div class="field">
+                <label for="Age">Age <span class="required-mark">*</span></label>
+                <div class="input-wrap"><span class="input-icon" aria-hidden="true">✧</span><input id="Age" name="Age" type="number" min="10" max="100" step="1" inputmode="numeric" placeholder="e.g. 21" required aria-describedby="age-hint"></div>
+                <small class="field-hint" id="age-hint">Between 10 and 100 years.</small>
+              </div>
+              <div class="field">
+                <label for="Gender">Gender <span class="required-mark">*</span></label>
+                <div class="input-wrap"><span class="input-icon" aria-hidden="true">◉</span><select id="Gender" name="Gender" required><option value="" selected disabled>Select an option</option><option value="Male">Male</option><option value="Female">Female</option></select><span class="select-chevron" aria-hidden="true">⌄</span></div>
+              </div>
+              <div class="field">
+                <label for="Country">Country <span class="required-mark">*</span></label>
+                <div class="input-wrap"><span class="input-icon" aria-hidden="true">⌖</span><select id="Country" name="Country" required><option value="" selected disabled>Select your country</option><option>India</option><option>USA</option><option>Canada</option><option>Australia</option><option>UK</option><option>Germany</option><option>Mexico</option><option>Turkey</option><option>France</option><option>Spain</option><option value="__other__">Other</option></select><span class="select-chevron" aria-hidden="true">⌄</span></div>
+                <input class="other-country" id="Country_other" type="text" autocomplete="country-name" placeholder="Enter your country" aria-label="Enter your country" hidden>
+              </div>
+              <div class="field">
+                <label for="Academic_Level">Academic level <span class="required-mark">*</span><button class="info-tip" type="button" aria-label="About academic level" title="Choose the closest matching level used by the prediction model.">i</button></label>
+                <div class="input-wrap"><span class="input-icon" aria-hidden="true">⌑</span><select id="Academic_Level" name="Academic_Level" required><option value="" selected disabled>Select your level</option><option value="High School">High school</option><option value="Undergradute">Undergraduate</option><option value="Gradute">Graduate</option></select><span class="select-chevron" aria-hidden="true">⌄</span></div>
+              </div>
+            </div>
+
+            <div class="form-section-label"><span class="section-icon" aria-hidden="true">◎</span> YOUR DIGITAL RHYTHM <span class="section-rule"></span></div>
+            <div class="field-grid">
+              <div class="field">
+                <label for="Most_Used_Platform">Most-used platform <span class="required-mark">*</span></label>
+                <div class="input-wrap"><span class="input-icon" aria-hidden="true">⌘</span><select id="Most_Used_Platform" name="Most_Used_Platform" required><option value="" selected disabled>Choose a platform</option><option>Facebook</option><option>LinkedIn</option><option>Instagram</option><option>Snapchat</option><option>Twitter</option><option>YouTube</option><option>TikTok</option><option>LINE</option><option>KakaoTalk</option><option>VKontakte</option><option>WhatsApp</option><option>WeChat</option></select><span class="select-chevron" aria-hidden="true">⌄</span></div>
+              </div>
+              <div class="field">
+                <label for="Purpose_Of_Use">Main purpose <span class="required-mark">*</span></label>
+                <div class="input-wrap"><span class="input-icon" aria-hidden="true">✦</span><select id="Purpose_Of_Use" name="Purpose_Of_Use" required><option value="" selected disabled>What do you use it for?</option><option>Networking</option><option>Education</option><option>Entertainment</option><option>News</option></select><span class="select-chevron" aria-hidden="true">⌄</span></div>
+              </div>
+              <div class="field">
+                <label for="Avg_Daily_Usage_Hours">Average daily usage <span class="required-mark">*</span><button class="info-tip" type="button" aria-label="About average daily usage" title="Total hours per day on your most-used platform. The API accepts 6 to 24 hours.">i</button></label>
+                <div class="input-wrap"><span class="input-icon" aria-hidden="true">◷</span><input id="Avg_Daily_Usage_Hours" name="Avg_Daily_Usage_Hours" type="number" min="6" max="24" step="any" inputmode="decimal" placeholder="e.g. 6.5" required aria-describedby="usage-hint"><span class="input-suffix">hrs</span></div>
+                <small class="field-hint" id="usage-hint">Enter 6–24 hours to match the model's API limits.</small>
+              </div>
+              <div class="field">
+                <label for="Daily_Unlocks">Daily phone unlocks <span class="required-mark">*</span><button class="info-tip" type="button" aria-label="About daily unlocks" title="Your approximate number of times you unlock your phone each day.">i</button></label>
+                <div class="input-wrap"><span class="input-icon" aria-hidden="true">▣</span><input id="Daily_Unlocks" name="Daily_Unlocks" type="number" min="0" step="1" inputmode="numeric" placeholder="e.g. 80" required></div>
+              </div>
+            </div>
+
+            <div class="form-section-label"><span class="section-icon" aria-hidden="true">☾</span> YOUR DAILY BALANCE <span class="section-rule"></span></div>
+            <div class="field-grid">
+              <div class="field">
+                <label for="Study_Hours">Study hours per day <span class="required-mark">*</span></label>
+                <div class="input-wrap"><span class="input-icon" aria-hidden="true">⌁</span><input id="Study_Hours" name="Study_Hours" type="number" min="0" max="24" step="any" inputmode="decimal" placeholder="e.g. 4.5" required><span class="input-suffix">hrs</span></div>
+              </div>
+              <div class="field">
+                <label for="Physical_Activity_Hours">Physical activity <span class="required-mark">*</span><button class="info-tip" type="button" aria-label="About physical activity" title="Approximate time spent moving or exercising each day.">i</button></label>
+                <div class="input-wrap"><span class="input-icon" aria-hidden="true">⌁</span><input id="Physical_Activity_Hours" name="Physical_Activity_Hours" type="number" min="0" max="24" step="any" inputmode="decimal" placeholder="e.g. 1.0" required><span class="input-suffix">hrs</span></div>
+              </div>
+              <div class="field">
+                <label for="Sleep_Hours_Per_Night">Sleep per night <span class="required-mark">*</span></label>
+                <div class="input-wrap"><span class="input-icon" aria-hidden="true">☾</span><input id="Sleep_Hours_Per_Night" name="Sleep_Hours_Per_Night" type="number" min="0" max="12" step="any" inputmode="decimal" placeholder="e.g. 7.5" required aria-describedby="sleep-hint"><span class="input-suffix">hrs</span></div>
+                <small class="field-hint" id="sleep-hint">The API accepts up to 12 hours.</small>
+              </div>
+              <div class="field">
+                <label for="Stress_Level">Current stress level <span class="required-mark">*</span><button class="info-tip" type="button" aria-label="About stress level" title="Choose the option that best describes how you feel lately; there are no right or wrong answers.">i</button></label>
+                <div class="input-wrap"><span class="input-icon" aria-hidden="true">♡</span><select id="Stress_Level" name="Stress_Level" required><option value="" selected disabled>Choose what feels closest</option><option>Low</option><option>Medium</option><option>High</option><option>Very High</option></select><span class="select-chevron" aria-hidden="true">⌄</span></div>
+              </div>
+            </div>
+
+            <div class="form-error" id="form-error" role="alert" tabindex="-1" hidden></div>
+            <button class="button button-primary submit-button" id="submit-button" type="submit">
+              <span class="button-label">Predict My Score</span>
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+            <p class="form-disclaimer"><span aria-hidden="true">✧</span> This prediction is for reflection only and is not a medical diagnosis.</p>
+          </form>
+
+          <div class="loading-state" id="loading-state" role="status" aria-live="polite" hidden>
+            <div class="loading-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+            <p class="loading-title">Analyzing your lifestyle patterns…</p>
+            <p class="loading-copy">A little moment while your prediction is prepared.</p>
+          </div>
+
+          <section class="result-state" id="result-state" aria-labelledby="result-title" hidden>
+            <div class="result-heading"><span class="result-kicker">YOUR MODEL OUTPUT</span><h3 id="result-title">A moment to reflect</h3></div>
+            <div class="score-visual">
+              <svg class="score-ring" viewBox="0 0 220 220" role="img" aria-labelledby="ring-title ring-desc">
+                <title id="ring-title">Predicted wellness percentage</title>
+                <desc id="ring-desc">The model's 0-to-10 estimate will be shown as a percentage out of 100.</desc>
+                <circle class="ring-track" cx="110" cy="110" r="91"></circle>
+                <circle class="ring-glow" cx="110" cy="110" r="91"></circle>
+                <circle class="ring-arc" cx="110" cy="110" r="91" pathLength="100"></circle>
+              </svg>
+              <div class="score-center"><span class="score-value" id="score-value">—</span></div>
+            </div>
+            <p class="result-explanation">The model predicts a score from 0 to 10, converted to a percentage by multiplying by 10. This project score is not a clinical measure or diagnosis.</p>
+            <div class="score-feedback" role="status" aria-live="polite">
+              <h4>Your reflection</h4>
+              <p id="score-feedback-text"></p>
+            </div>
+            <div class="result-actions">
+              <button class="button button-primary" type="button" id="try-again-button"><span>Return to my answers</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+              <button class="text-button" type="button" id="reset-button">Reset check-in</button>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="closing-note page-shell" aria-label="MindAura reminder">
+        <span class="closing-star" aria-hidden="true">✳</span>
+        <p>You are more than a number. Take what feels useful, leave what doesn't.</p>
+        <span class="closing-star" aria-hidden="true">✳</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner page-shell">
+        <a class="brand footer-brand" href="#home">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 3.5c2.8 7.9 8.6 13.7 16.5 16.5C28.6 22.8 22.8 28.6 20 36.5 17.2 28.6 11.4 22.8 3.5 20 11.4 17.2 17.2 11.4 20 3.5Z" fill="currentColor"/><circle cx="20" cy="20" r="3.1" fill="#17172f"/></svg></span>
+          <span>Mind<span class="brand-light">Aura</span></span>
+        </a>
+        <p>Designed with care for a more mindful digital life.</p>
+        <a class="back-top" href="#home">Back to top ↑</a>
+      </div>
+      <div class="footer-bottom page-shell"><span>MindAura · A student project</span><span>Understand Your Habits. Discover Your Balance.</span></div>
+    </footer>
+  </body>
+</html>
