@@ -176,10 +176,6 @@ h2 { margin-bottom: 14px; font-size: clamp(37px, 4vw, 49px); font-weight: 500; l
 .predict-intro { padding-top: 36px; }
 .predict-intro h2 { margin: 19px 0 14px; }
 .predict-intro > p:not(.eyebrow) { max-width: 350px; margin-bottom: 26px; color: var(--muted); font-size: 13px; line-height: 1.8; }
-.privacy-note { display: flex; gap: 13px; max-width: 340px; border: 1px solid rgba(198, 169, 255, .16); border-radius: 13px; padding: 14px; background: rgba(123, 101, 178, .08); }
-.privacy-note > span { color: var(--lavender); font-size: 18px; }
-.privacy-note p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
-.privacy-note strong { color: #e4dff4; font-weight: 600; }
 .progress-preview { max-width: 340px; margin-top: 38px; }
 .progress-preview-head { display: flex; justify-content: space-between; color: #e1dcee; font-size: 12px; }
 .progress-preview-head span:last-child { color: var(--mint); font-variant-numeric: tabular-nums; }
@@ -296,7 +292,7 @@ h2 { margin-bottom: 14px; font-size: clamp(37px, 4vw, 49px); font-weight: 500; l
   .hero-art { transform: scale(.86); transform-origin: center; margin-inline: -30px; }
   .predict-section { grid-template-columns: 1fr; gap: 30px; }
   .predict-intro { padding-top: 0; }
-  .predict-intro > p:not(.eyebrow), .privacy-note, .progress-preview { max-width: 600px; }
+  .predict-intro > p:not(.eyebrow), .progress-preview { max-width: 600px; }
 }
 @media (max-width: 620px) {
   .ambient, .particle-field, .wave-lines { display: none; }
