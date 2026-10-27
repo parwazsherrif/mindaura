@@ -8,6 +8,7 @@
   const resultState = document.getElementById("result-state");
   const errorBox = document.getElementById("form-error");
   const submitButton = document.getElementById("submit-button");
+  const sampleButton = document.getElementById("sample-button");
   const scoreValue = document.getElementById("score-value");
   const scoreFeedback = document.getElementById("score-feedback-text");
   const scoreRing = document.querySelector(".ring-arc");
@@ -203,6 +204,32 @@
   });
 
   otherCountry.addEventListener("input", updateProgress);
+  sampleButton.addEventListener("click", () => {
+    const sampleAnswers = {
+      Age: 21,
+      Gender: "Female",
+      Country: "India",
+      Academic_Level: "Undergradute",
+      Most_Used_Platform: "Instagram",
+      Purpose_Of_Use: "Education",
+      Avg_Daily_Usage_Hours: 6.5,
+      Daily_Unlocks: 80,
+      Study_Hours: 4.5,
+      Physical_Activity_Hours: 1,
+      Sleep_Hours_Per_Night: 7,
+      Stress_Level: "Medium"
+    };
+
+    for (const [name, value] of Object.entries(sampleAnswers)) {
+      form.elements.namedItem(name).value = String(value);
+    }
+    otherCountry.value = "";
+    otherCountry.hidden = true;
+    otherCountry.required = false;
+    clearError();
+    updateProgress();
+  });
+
   form.addEventListener("input", updateProgress);
   form.addEventListener("input", clearError);
   form.addEventListener("change", () => {
