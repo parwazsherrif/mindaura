@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const API_URL = "http://127.0.0.1:8000/predict";
+  const API_URL = "https://mind-aura.onrender.com";
   const form = document.getElementById("prediction-form");
   const formPanel = document.querySelector(".form-panel");
   const loadingState = document.getElementById("loading-state");
